@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "技术推演", "技术推演\技术推演.vcxproj", "{0073A63F-7B98-4607-8131-640DD25C6ACC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "作业1", "..\作业1\作业1.vcxproj", "{ADEE318B-5E87-4FF2-9395-073F092C9512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0073A63F-7B98-4607-8131-640DD25C6ACC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0073A63F-7B98-4607-8131-640DD25C6ACC}.Debug|Win32.Build.0 = Debug|Win32
+		{0073A63F-7B98-4607-8131-640DD25C6ACC}.Release|Win32.ActiveCfg = Release|Win32
+		{0073A63F-7B98-4607-8131-640DD25C6ACC}.Release|Win32.Build.0 = Release|Win32
+		{ADEE318B-5E87-4FF2-9395-073F092C9512}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ADEE318B-5E87-4FF2-9395-073F092C9512}.Debug|Win32.Build.0 = Debug|Win32
+		{ADEE318B-5E87-4FF2-9395-073F092C9512}.Release|Win32.ActiveCfg = Release|Win32
+		{ADEE318B-5E87-4FF2-9395-073F092C9512}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
