@@ -4,6 +4,7 @@
 
 int trimSpace(char *inbuf,char *outbuf)
 {
+	
 	int res = 0;
 	//为了不移动传入的指针值，我们需要为两个参数定义两个副本
 	char *inbufbak = inbuf;
