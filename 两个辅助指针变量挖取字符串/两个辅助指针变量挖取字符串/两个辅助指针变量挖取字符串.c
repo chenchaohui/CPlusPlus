@@ -53,7 +53,7 @@ void main01()
 //就业代码
 //定义一个接口
 //通过分析得到一个这样的函数借口
-int getstr( char *p,char strArray[10][20],int *mycount)
+int getstr( char *p,char c,char strArray[10][20],int *mycount)
 {
     char *pbak0 = p;
 	char *pbak1 = pbak0;
@@ -65,7 +65,7 @@ int getstr( char *p,char strArray[10][20],int *mycount)
 	}
 	do 
 	{
-		pbak0 = strchr(pbak0, ',');
+		pbak0 = strchr(pbak0, c);
 		if (pbak0 != NULL)
 		{
 			//指针str0走在前面，指针str1走在后面
@@ -102,7 +102,7 @@ void main()
 	int count = 0;
 	char *str1 = { "aaa,bbbb,ccccc,dddddd," };
 	char strArray[10][20] = { 0 };
-	ret=getstr(str1,strArray,&count);
+	ret=getstr(str1,',',strArray,&count);
 	if (ret==-1)
 	{
 		printf("分割失败\n");
