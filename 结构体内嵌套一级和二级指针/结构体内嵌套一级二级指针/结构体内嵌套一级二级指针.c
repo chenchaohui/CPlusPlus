@@ -192,9 +192,5 @@ void main()
 			 freetArray(p, 2);
 	     }
 		 p = NULL;
-		
-	
-
-
 	system("pause");
 } 
