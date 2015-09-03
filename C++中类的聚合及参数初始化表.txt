@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+class dd
+{
+public:
+	dd(int i,int j )
+	{
+		m_i = i;
+		//m_j = j;
+	}
+private:
+	int m_i;
+	int m_j;
+
+};
+
+class   EE
+{
+public:
+	//存在类的聚合的时候，该类的带参构造函数
+	EE(int mn) :m_n(mn), d1(1, 2), d2(2,4)
+	{
+	
+	}
+protected:
+private:
+	int m_n;
+	dd d1;
+	dd d2;
+};
+
+void main()
+{
+	EE e(2);
+	system("pause");
+}

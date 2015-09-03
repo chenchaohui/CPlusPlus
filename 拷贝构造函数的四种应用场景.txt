@@ -1,0 +1,83 @@
+////拷贝构造函数的四种应用场景
+///*
+//1.  t2(t1);
+//2.  t2=t1;
+//3.   func1(Time t)//用一个已知的对象去初始化形参
+//4.  Time func2()
+//    {
+//     Time t1(10,10,10);
+//	 return t1;
+//    }
+//*/
+//
+#include<iostream>
+using namespace std;
+class Person
+{
+public:
+	int age;
+public:
+	Person(int ag = 0) :age(ag)
+	{
+		cout << "call construction" << endl;
+	}
+
+public:
+	Person(const Person &t)
+	{
+		cout << "call copy construction" << endl;
+	}
+public:
+	Person operator=(const Person &t)
+	{
+		cout << "call equal function" << endl;
+		return t;
+	}
+};
+
+void f(Person p)
+{
+
+	cout << "******" << endl;
+}
+
+Person f2()
+{
+	Person t(10);
+	return t;
+}
+
+void main()
+{
+
+	Person t1(10);
+	//拷贝构造函数的第一种应用场景
+	Person t2(t1);
+	//拷贝构造函数的第二种应用场景
+	Person t3 = t1;              //这样的话 调用拷贝构造函数
+
+	//Person t3;
+	//t3 = t1;                //  先定义再初始化这样的话调用重载的=函数
+
+
+	//拷贝构造函数的第三种应用场景
+	f(t1);  // 调用该函数的时候创建一个临时对象，并用对象t1去初始化该临时对象
+
+
+	//拷贝构造函数的第四种应用场景
+	Person p = f2();         //执行f2()中的return语句前，先调用拷贝构造函数，注意这里创建p对象的时候不会调用p的构造函数，这是C++编译器做的优化
+	                        // 将一个临时对象直接赋值给一个对象时，不会调用该对象的构造函数。
+
+	Person p4;
+	p4 = f2();
+
+	//Person t3(20);
+	//Person t2(t1);
+	//t2=t3;
+	system("pause");
+}
+
+
+
+
+
